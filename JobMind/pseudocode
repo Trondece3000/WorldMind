@@ -1,0 +1,30 @@
+"""
+Load in data
+    websites.list
+    website_job_search_url.list     #could be combined with websites.list
+    depracated_websites.list
+    saved_data.dat
+    whatever.else
+"""
+
+"""
+Main program run //Learn parallelization and concurrent programming/scripting       Key: Def = "Functions that do the task described"
+    Def: pull job data from websites  //optimize by hashing data from previous check with current check
+          Jobjects: // vars: urls, search terms, custom objects
+          - JobQueue = [{Company: "", Title: "", Location: "", Desc: "", Others: ""},{...},...] // load old saved queue?
+              - Save in file as JSON object? Maybe can be better stored in SQL DB? Look into this futher...
+          - Interact with websites.list
+          - Update JobQueue with jobjects
+        
+    Def: Graphical shit
+          - Graphical Window Text display, basic navigation
+            - Display Jobjects
+    Def: Jobject interation
+          - View Queue
+          - Remove from queue
+          - Save to queue
+          - Go to posting/applciation page
+          - Update search terms
+          - Update custom URL list
+
+"""
