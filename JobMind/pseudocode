@@ -1,3 +1,7 @@
+imports
+dotenv
+bs4 from BeautifulSoup
+
 """
 Load in data
     websites.list
@@ -11,9 +15,20 @@ Load in data
 Main program run //Learn parallelization and concurrent programming/scripting       Key: Def = "Functions that do the task described"
     Def: pull job data from websites  //optimize by hashing data from previous check with current check
           Jobjects: // vars: urls, search terms, custom objects
+          - load pre-existing jobjects from saved_data.dat into JobQueue
           - JobQueue = [{Company: "", Title: "", Location: "", Desc: "", Others: ""},{...},...] // load old saved queue?
               - Save in file as JSON object? Maybe can be better stored in SQL DB? Look into this futher...
           - Interact with websites.list
+            - Jobsites search engines and queries
+                - Indeed -smash that /jobs?q= poon
+                - Glassdoor -REST api
+                - Knighthunter(?)
+            - Custom sites list:
+                - Cyber Security Companies
+                    - Arctic Wolf https://arcticwolf.com/company/careers/
+                    - FireEye Mandiant https://www.fireeye.com/company/jobs.html
+                - Government sites
+                - Others....
           - Update JobQueue with jobjects
         
     Def: Graphical shit
